@@ -107,6 +107,7 @@ extern pgprot_t pgprot_default;
 #define __S010  __PAGE_SHARED
 #define __S011  __PAGE_SHARED
 #define __S100  __PAGE_READONLY_EXEC
+#define __P100  __PAGE_READONLY_EXEC
 #define __S101  __PAGE_READONLY_EXEC
 #define __S110  __PAGE_SHARED_EXEC
 #define __S111  __PAGE_SHARED_EXEC
