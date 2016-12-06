@@ -5746,8 +5746,8 @@ static struct mxt_platform_data *mxt_parse_dt(struct i2c_client *client)
 #if defined(CONFIG_DUMMY_PARSE_DTS)
 		keymap[T15_T97_KEY][0] = KEY_BACK;
 		keymap[T15_T97_KEY][1] = KEY_HOMEPAGE;
-		keymap[T15_T97_KEY][2] = KEY_APPSELECT;
-                keymap[T93_KEY][0] = KEY_POWER; //for double tap wake up key
+		keymap[T15_T97_KEY][2] = KEY_MENU;
+                keymap[T93_KEY][0] = KEY_WAKEUP; //for double tap wake up key
 #endif
 		pdata->num_keys = num_keys;
 		pdata->keymap = (void *)keymap;
@@ -6046,8 +6046,8 @@ static void update_keymap(struct mxt_platform_data *pdata)
 #if defined(CONFIG_DUMMY_PARSE_DTS)
 	pdata->keymap[T15_T97_KEY][0] = KEY_BACK;
 	pdata->keymap[T15_T97_KEY][1] = KEY_HOMEPAGE;
-	pdata->keymap[T15_T97_KEY][2] = KEY_APPSELECT;
-        pdata->keymap[T93_KEY][0] = KEY_POWER; //for double tap wake up key
+	pdata->keymap[T15_T97_KEY][2] = KEY_MENU;
+        pdata->keymap[T93_KEY][0] = KEY_WAKEUP; //for double tap wake up key
 #endif
 	return;
 }
